@@ -99,7 +99,7 @@ Example of the image heatmaps
 
 > Note:- In video we used 30 frames to draw heatmaps and identify cars in the images.
  
->Discussion:- The prediction still needed much improvement to reach perfection.
+>Discussion:- The prediction still can be improvement to reach perfection.
 
 
 
