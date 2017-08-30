@@ -45,7 +45,7 @@ The datasets were extracted form udacity datasets into the programme to train th
 Exracting Hog Features by calling hog_function
 
 ##### HOG IMAGE
-![](show/1.png)
+![](show/16.png)
 
 Similarly calling respective functions to Analyse Histogram and Spatial features of the image
 
@@ -85,16 +85,16 @@ Henceforth to rectify the false prediction we used the method of heatmaps
 
 Results Examples:-
 
-![](show/8.png)
-![](show/9.png)
+![](show/13.png)
+![](show/12.png)
  
 ###Step 5:-Using Heatmap function to make sure the image predicted is of a car
 We used heat maps parameters to remove all the flase predcitions made by the classifier.This method was helpful in removing all the false predictions.
 
 Example of the image heatmaps
 
-![](show/10.png)
-![](show/11.png)
+![](show/14.png)
+![](show/15.png)
 
 
 > Note:- In video we used 30 frames to draw heatmaps and identify cars in the images.
@@ -105,3 +105,10 @@ Example of the image heatmaps
 
 > test_results:- Test Video
 > project_result:- Project Video
+
+#### Problem Faced:-
+
+- Setting Parameters for Hog Features was the most difficult task as various paramaters gave various results.Adjusting this parameters was the most time consuming task.
+- Training The Classifier with specific features and drawing boxes by classifer predictions was second in line that consumed most of the time in the project.
+"Since there were number of paramaters like sliding window function for stronger predictions of car image had to done made the task time consuming(following Parameters were used(128,128),(64,64),(32,32),(96,96)"
+
