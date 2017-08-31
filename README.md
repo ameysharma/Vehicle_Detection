@@ -112,3 +112,21 @@ Example of the image heatmaps
 - Training The Classifier with specific features and drawing boxes by classifer predictions was second in line that consumed most of the time in the project.
 "Since there were number of paramaters like sliding window function for stronger predictions of car image had to done made the task time consuming(following Parameters were used(128,128),(64,64),(32,32),(96,96)"
 
+#### Sliding Window Search
+
+Following parameters were used for sliding window search
+
+- for windowsize(128,128)- overlap ratio used was(0.70,0.70)--areas restricted to search y-parameters[400,650].
+
+- for windowsize(96,96)- overlap ratio used was(0.85,0.85)--areas restricted to search y-parameters[400,600] (resticted this area to search for closeby car images with stronger predictions). 
+
+- for windowsize(64,64)- overlap ratio used was(0.85,0.85)--areas restricted to search y-parameters[390,540] (resticted this area to search for smaller car images). 
+
+#### Histogram of Oriented Gradients (HOG)-Explaination for choosing parameters
+
+
+- colorspace = "YCrCb" # Can be RGB, HSV, LUV, HLS, YUV, YCrCb--After trying various combinations only YCrCb combination worked well with the program 
+- orient = 9----------Choosed oreientation 9 by trial and error method---other combinations used 11,12,13,8 
+- pix_per_cell = 16-------Choosed by trail and error method---Other combinations used 8,4,32.
+- cell_per_block = 4--------Choosed Folowing input by trial and error method used 8,2,1,4.
+- hog_channel = 1 # Can be 0, 1, 2, or "ALL"----Value Selected by Trial And Error Method.
